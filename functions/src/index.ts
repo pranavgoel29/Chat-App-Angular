@@ -4,8 +4,8 @@ const cors = require('cors')({origin: true});
 const StreamChat = require('stream-chat').StreamChat;
 
 const serverStreamClient = StreamChat.getInstance(
-    functions.config().stream.key,
-    functions.config().stream.secret
+  'ujjw2h7tnmjj',
+    '4p2vexwg5hhyscn3686n38h8g2fmqaqfhjnurkk7pcwgw5qqh2smnv5fzbpsvf2b'
 );
 
 admin.initializeApp();

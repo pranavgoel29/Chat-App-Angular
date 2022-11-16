@@ -11,6 +11,6 @@ export const environment = {
   production: false,
   apiUrl: 'https://us-central1-get-stream-io-decoded.cloudfunctions.net',
   stream: {
-    key: 'wxgsgqrws5v8'
+    key: 'ujjw2h7tnmjj'
   }
 };
