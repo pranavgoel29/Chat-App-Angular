@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+  <span>GetStream Chat</span>
+  <span class="header-spacer"></span>
+  <ng-container *ngIf="auth.isLoggedIn$ | async as user; else authButtons">
+    <span>User {{ user?.displayName }} is logged in</span>
+    <button mat-button (click)="signOut()">Sign Out</button>
+  </ng-container>
+</mat-toolbar>
+
+<main class="content mat-app-background">
+  <router-outlet></router-outlet>
+</main>
+
+<ng-template #authButtons>
+  <a routerLink="/signin" routerLinkActive="active" mat-button>Signin</a>
+  <a routerLink="/signup" routerLinkActive="active" mat-button>Signup</a>
+</ng-template>
